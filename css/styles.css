@@ -1,29 +1,74 @@
 /***********TAG SELECTORS***********/
-ul {
-  list-style-type: none;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+button {
+  padding: 9px 25px;
+  margin-left: 20px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #172b30cc;
+}
+
+nav {
+  order: 1;
 }
 
 /***********CLASS SELECTORS***********/
-.active {
-  background-color: #04AA6D;
+.contact {
+  order: 2;
 }
+
+
+.logo {
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li:nth-child(1) {
+  padding: 0 20px 0 0;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+  color: #0088a9;
+}
+
