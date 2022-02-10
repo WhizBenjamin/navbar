@@ -23,7 +23,6 @@ header {
 
 button {
   padding: 9px 25px;
-  margin-left: 20px;
   background-color: #0088a9;
   border: none;
   border-radius: 50px;
@@ -35,20 +34,10 @@ button:hover {
   background-color: #172b30cc;
 }
 
-nav {
-  order: 1;
-}
-
 /***********CLASS SELECTORS***********/
-.contact {
-  order: 2;
-}
-
-
 .logo {
   cursor: pointer;
-  order: 3;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-links {
@@ -58,10 +47,6 @@ nav {
 .nav-links li {
   display: inline-block;
   padding: 0 20px;
-}
-
-.nav-links li:nth-child(1) {
-  padding: 0 20px 0 0;
 }
 
 .nav-links li a {
